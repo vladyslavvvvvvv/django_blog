@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список блогів</title>
+</head>
+<body>
+    <h2>
+        Блог
+    </h2>
+    <ul>
+        {% for blog in blogs %}
+
+            <li>
+                {{blog.title}} - {{blog.content}}
+            </li>
+
+
+        {% endfor %}
+    </ul>
+</body>
+</html>
